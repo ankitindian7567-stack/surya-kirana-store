@@ -1,0 +1,6 @@
+{
+  "name": "Surya Kirana Store",
+  "description": "Premium grocery, daily essentials, and puja samagri store offering high-quality products, affordable prices, and prompt friendly service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
