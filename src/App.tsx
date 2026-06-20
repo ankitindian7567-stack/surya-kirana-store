@@ -258,7 +258,7 @@ export default function App() {
                     Shop Owner: <span className="underline font-extrabold">{STORE_INFO.owner}</span>
                   </p>
                   <p className="text-gray-550 text-xs sm:text-sm mt-3 leading-relaxed">
-                    Welcome to Surya Kirana Store, personally managed by {STORE_INFO.owner}. Serving Gandhinagar since 2012 with premium grains, organic Puja essentials, pure dairy, and household cleaners. Our mission is to combine friendly local relationships with state-of-the-art visual billing!
+                    Welcome to Surya Kirana Store, personally managed by {STORE_INFO.owner}. Serving kukurha since 1980 with premium grains, organic Puja essentials, pure dairy, and household cleaners. Our mission is to combine friendly local relationships with state-of-the-art visual billing!
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function App() {
                 <div className="p-3 bg-gray-50 rounded-2xl border border-gray-100">
                   <MapPin className="w-5 h-5 text-orange-550 mx-auto mb-1" />
                   <span className="block text-[10px] text-gray-400 font-bold uppercase">Store Address</span>
-                  <span className="text-xs text-gray-700 font-black line-clamp-1 truncate">Gandhinagar, Gujarat</span>
+                  <span className="text-xs text-gray-700 font-black line-clamp-1 truncate">Kukurha, Buxar</span>
                 </div>
                 <div className="p-3 bg-gray-50 rounded-2xl border border-gray-100 col-span-2 sm:col-span-1">
                   <MessageSquare className="w-5 h-5 text-green-550 mx-auto mb-1" />

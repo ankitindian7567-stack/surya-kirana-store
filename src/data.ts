@@ -337,14 +337,14 @@ export const PROMO_OFFERS: PromoOffer[] = [
 export const STORE_INFO = {
   name: "Surya Kirana Store",
   tagline: "Har Zaroorat Ka Vishwas, Surya Kirana Store Ke Saath",
-  owner: "Ankit Kumar",
+  owner: "Om Prakash Singh",
   phone: "+91 70044 10152,+91 9525486056",
   whatsapp: "+917004410152",
   email: "care@suryakiranastore.com",
   address: "Shop No. 1, Surya Kirana Store,itarhi , kukudha chowk, buxar,bihar, Pin - 802123",
   hours: [
-    { days: "Monday - Saturday", time: "7:30 AM - 10:00 PM" },
-    { days: "Sunday", time: "8:00 AM - 9:00 PM" }
+    { days: "Monday - Saturday", time: "6:00 AM - 10:00 PM" },
+    { days: "Sunday", time: "6:00 AM - 10:00 PM" }
   ],
   mapsLink: "https://maps.google.com/?q=Surya+Kirana+Store+Gandhinagar",
   // Standard free embed code coordinates representation

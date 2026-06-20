@@ -42,7 +42,7 @@ export default function Footer({ onNavigateSection, setActiveCategory }: FooterP
           
           <p className="text-xs text-gray-400 leading-relaxed font-sans max-w-sm">
             "{STORE_INFO.tagline}"
-            We represent Gandhinagar's trusted address for 100% adulteration-free rice, pure cow ghee, and divine organic incense sticks.
+            We represent buxar trusted address for 100% adulteration-free rice, pure cow ghee, and divine organic incense sticks.
           </p>
 
           {/* Social Links Icons */}
