@@ -273,7 +273,8 @@ export default function App() {
                 <div className="p-3 bg-gray-50 rounded-2xl border border-gray-100">
                   <MapPin className="w-5 h-5 text-orange-550 mx-auto mb-1" />
                   <span className="block text-[10px] text-gray-400 font-bold uppercase">Store Address</span>
-                  <span className="text-xs text-gray-700 font-black line-clamp-1 truncate">Kukurha, Buxar</span>
+                  <span className="text-xs text-gray-700 font-black line-clamp-1 truncate">Kukurha
+                  , Buxar</span>
                 </div>
                 <div className="p-3 bg-gray-50 rounded-2xl border border-gray-100 col-span-2 sm:col-span-1">
                   <MessageSquare className="w-5 h-5 text-green-550 mx-auto mb-1" />
