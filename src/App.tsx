@@ -10,6 +10,7 @@ import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import CartDrawer from "./components/CartDrawer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Footer from "./components/Footer";
 import RewardCenter from "./components/RewardCenter";
 import BillingDesk from "./components/BillingDesk";
@@ -37,6 +38,26 @@ export default function App() {
   // Tab-based Mobile-focused navigation state
   // Tabs: "shop", "rewards", "billing", "about"
   const [activeTab, setActiveTab] = useState<string>("shop");
+
+  // Theme state: "gold", "emerald", "midnight", "rose"
+  const [theme, setTheme] = useState<string>(() => {
+    try {
+      return localStorage.getItem("surya_theme") || "gold";
+    } catch {
+      return "gold";
+    }
+  });
+
+  // Sync theme class to body element
+  useEffect(() => {
+    try {
+      localStorage.setItem("surya_theme", theme);
+    } catch (e) {
+      console.error(e);
+    }
+    const body = document.body;
+    body.className = `theme-${theme}`;
+  }, [theme]);
 
   // Surya Coins Gamification State
   const [coins, setCoins] = useState<number>(() => {
@@ -146,7 +167,7 @@ export default function App() {
   const totalCartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <div className="min-h-screen bg-orange-50/5 flex flex-col font-sans select-none antialiased text-gray-800 pb-20 sm:pb-0">
+    <div className={`theme-${theme} min-h-screen bg-orange-50/5 flex flex-col font-sans select-none antialiased text-gray-800 pb-20 sm:pb-0 transition-colors duration-300`}>
       
       {/* 1. Upper Promos Announcement banner */}
       <PromoBanner />
@@ -415,6 +436,9 @@ export default function App() {
 
       {/* 5. Persistent WhatsApp visual floating speed dial */}
       <FloatingWhatsApp />
+
+      {/* Theme Switcher Widget */}
+      <ThemeSwitcher currentTheme={theme} onThemeChange={setTheme} />
 
       {/* 6. Footer section (Renders only if about section is selected, or fits nicely at standard shop bottom) */}
       <Footer 
